@@ -1,0 +1,39 @@
+CREATE DATABASE university
+\c
+CREATE TABLE students(
+student_id 	integer PRIMARY KEY,
+student_name VARCHAR(200),
+
+
+);
+
+CREATE TABLE projects(
+project_id integer PRIMARY KEY,
+project_name
+
+);
+
+CREATE TABLE students_in_projects(
+student_id integer REFERENCES students,
+project_id integer REFERENCES projects,
+PRIMARY KEY(student_id,project_id)
+);
+
+CREATE TABLE project_mentor(
+mentor_id integer PRIMARY KEY,
+mentor_name text,
+mentor_university_position text,
+mentor_salary numeric  NOT NULL CHEK (mentor_salary > 0)
+
+);
+
+CREATE TABLE student_gradebook(
+gradebook_id integer PRIMARY KEY,
+student_id REFERENCES students
+
+);
+
+CREATE TABLE groups(
+group_id integer PRIMARY KEY,
+group_name VARCHAR(200)
+);
