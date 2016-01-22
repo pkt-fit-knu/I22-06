@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+
+<body>
+    
+        <svg xmlns="http://www.w3.org/2000/svg"  width ="1440" height="700">
+            <rect width="1440" height="700"  fill='cyan'"></rect>
+        
+            <path id="line" d="M 50 50 q150 600 300 250 q200 -500 300 100 " stroke="blue" stroke-width="3" fill="none"></path>
+            
+                <circle id="ball" cx="50" cy="50" r="10" style="position:absolute"></circle>
+            
+        </svg>
+    <input type="button" value="Start Animation" onclick="startAnimation();">
+    <input type="button" value="Stop Animation" >
+    <script>
+        function startAnimation() {
+
+            animateObject('line', 'ball', 10, 5002, 1, 550);
+            function animateObject(pathId, animateObjId, acceleration, totalEnergy, mass, potentialEnergyZeroY) {
+                var line = document.getElementById(pathId);
+                var lineLength = line.getTotalLength();
+                var linePoint = line.getPointAtLength(1);
+                var linePointX = linePoint.x;
+                var linePointY = linePoint.y;
+
+                var zero = potentialEnergyZeroY;
+                var circleMilege = 0;
+                var E = totalEnergy;
+                var g = acceleration;
+                var speed = 0;
+                var timerFunction = null;
+                if (mass) {
+                    var m = parseFloat(mass);
+                }
+
+                // alert("Total line length: " + lineLength + " X coordinate at length 150: " + linePointX + "Y coordinate at length 150: " + linePointY);
+
+
+
+                //function startAnimation() {
+                if (timerFunction == null) {
+                    timerFunction = setInterval(animate, 20);
+                }
+                //}
+
+                //function stopAnimation() {
+                //    if (timerFunction != null) {
+                //        clearInterval(timerFunction);
+                //        timerFunction = null;
+                //    }
+                //}
+
+                function animate() {
+
+                    //if (linePoint.x < 150)
+                    //    speed += 0.1;
+                    //else
+                    //    speed += 0.1;
+
+                    var circle = document.getElementById(animateObjId);
+                    var h = zero - parseInt(circle.getAttribute("cy"));
+                    speed = Math.sqrt((E - m * g * h) * 2 / m);
+                    circleMilege += speed;
+                    linePoint = line.getPointAtLength(circleMilege);
+
+                    circle.setAttribute("cx", linePoint.x);
+                    circle.setAttribute("cy", linePoint.y);
+                    console.log(speed);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

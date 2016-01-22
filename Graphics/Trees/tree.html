@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tree</title>
+</head>
+<body>
+
+<svg id="forest" height="1000" width="1000"> </svg>
+
+<script>
+function Tree (height, width, xPos, yPos, needle, wood, svgId){
+	this.h = parseInt(height);
+	this.w = parseInt(width);
+	this.x = parseInt(xPos);
+	this.y = parseInt(yPos); 
+	this.needleColor = needle;
+	this.woodColor = wood;
+	this.svgId = svgId;
+	
+	var a = this.h * 0.9; //высота кроны
+	var r = function(x){
+		return Math.round(x);
+	}
+	
+	var needle = document.createElementNS("http://www.w3.org/2000/svg", 'path');
+	var s1 = "M"+r(this.w/2+this.x)+" "+this.y+" L"+r(this.w/3+this.x)+" "+r(a/3+this.y)+" L"+r((5*this.w)/12+this.x)+" "+r(a/3+this.y)+
+			" L"+r(this.w/6+this.x)+" "+r((2*a)/3+this.y)+" L"+r(this.w/3+this.x)+" "+r((2*a)/3+this.y)+
+			" L"+this.x+" "+(a+this.y)+" L"+(this.w+this.x)+" "+(a+this.y)+
+			" L"+r((2*this.w)/3+this.x)+" "+r((2*a)/3+this.y)+" L"+r((5*this.w)/6+this.x)+" "+r((2*a)/3+this.y)+
+			" L"+r((7*this.w)/12+this.x)+" "+r(a/3+this.y)+" L"+r((2*this.w)/3+this.x)+" "+r(a/3+this.y)+" Z";
+	needle.setAttribute("d", s1);
+	needle.setAttribute("style", "fill:"+this.needleColor);
+	document.getElementById("forest").appendChild(needle);
+
+	var wood = document.createElementNS("http://www.w3.org/2000/svg", 'path');
+	var s2 = "M"+r((5*this.w)/12+this.x)+" "+(a+this.y)+" V"+(this.h+this.y)+" H"+r((7*this.w)/12+this.x)+" V"+(a+this.y)+" Z";
+	wood.setAttribute("d", s2);
+	wood.setAttribute("style", "fill:"+this.woodColor);
+	document.getElementById("forest").appendChild(wood);
+}
+
+var tree1 = new Tree(100, 70, 20, 25, "green", "darkbrown", "forest");
+var tree2 = new Tree(150, 100, 90, 50, "darkgreen", "brown", "forest");
+var tree3 = new Tree(90, 65, 180, 15, "darkblue", "brown", "forest");
+alert("123"===123);
+</script>
+</body>
+</html>
