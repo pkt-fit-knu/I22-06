@@ -1,0 +1,8 @@
+C:\Users\Александр\Documents\Visual Studio 2013\Projects\HuntAlgorithm\HuntAlgorithm\bin\Debug\HuntAlgorithm.exe.config
+C:\Users\Александр\Documents\Visual Studio 2013\Projects\HuntAlgorithm\HuntAlgorithm\bin\Debug\HuntAlgorithm.exe
+C:\Users\Александр\Documents\Visual Studio 2013\Projects\HuntAlgorithm\HuntAlgorithm\bin\Debug\HuntAlgorithm.pdb
+C:\Users\Александр\Documents\Visual Studio 2013\Projects\HuntAlgorithm\HuntAlgorithm\bin\Debug\FileHelpers.dll
+C:\Users\Александр\Documents\Visual Studio 2013\Projects\HuntAlgorithm\HuntAlgorithm\bin\Debug\FileHelpers.xml
+C:\Users\Александр\Documents\Visual Studio 2013\Projects\HuntAlgorithm\HuntAlgorithm\obj\Debug\HuntAlgorithm.csprojResolveAssemblyReference.cache
+C:\Users\Александр\Documents\Visual Studio 2013\Projects\HuntAlgorithm\HuntAlgorithm\obj\Debug\HuntAlgorithm.exe
+C:\Users\Александр\Documents\Visual Studio 2013\Projects\HuntAlgorithm\HuntAlgorithm\obj\Debug\HuntAlgorithm.pdb

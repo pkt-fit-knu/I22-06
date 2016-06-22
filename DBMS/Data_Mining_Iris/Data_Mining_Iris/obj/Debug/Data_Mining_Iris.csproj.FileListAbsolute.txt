@@ -1,0 +1,6 @@
+C:\Users\Александр\Documents\Visual Studio 2013\Projects\Data_Mining_Iris\Data_Mining_Iris\bin\Debug\Data_Mining_Iris.exe.config
+C:\Users\Александр\Documents\Visual Studio 2013\Projects\Data_Mining_Iris\Data_Mining_Iris\bin\Debug\Data_Mining_Iris.exe
+C:\Users\Александр\Documents\Visual Studio 2013\Projects\Data_Mining_Iris\Data_Mining_Iris\bin\Debug\Data_Mining_Iris.pdb
+C:\Users\Александр\Documents\Visual Studio 2013\Projects\Data_Mining_Iris\Data_Mining_Iris\obj\Debug\Data_Mining_Iris.csprojResolveAssemblyReference.cache
+C:\Users\Александр\Documents\Visual Studio 2013\Projects\Data_Mining_Iris\Data_Mining_Iris\obj\Debug\Data_Mining_Iris.exe
+C:\Users\Александр\Documents\Visual Studio 2013\Projects\Data_Mining_Iris\Data_Mining_Iris\obj\Debug\Data_Mining_Iris.pdb

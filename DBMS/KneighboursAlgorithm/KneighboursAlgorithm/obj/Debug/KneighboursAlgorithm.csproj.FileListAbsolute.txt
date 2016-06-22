@@ -1,0 +1,6 @@
+C:\Users\Александр\Documents\Visual Studio 2013\Projects\KneighboursAlgorithm\KneighboursAlgorithm\bin\Debug\KneighboursAlgorithm.exe.config
+C:\Users\Александр\Documents\Visual Studio 2013\Projects\KneighboursAlgorithm\KneighboursAlgorithm\bin\Debug\KneighboursAlgorithm.exe
+C:\Users\Александр\Documents\Visual Studio 2013\Projects\KneighboursAlgorithm\KneighboursAlgorithm\bin\Debug\KneighboursAlgorithm.pdb
+C:\Users\Александр\Documents\Visual Studio 2013\Projects\KneighboursAlgorithm\KneighboursAlgorithm\obj\Debug\KneighboursAlgorithm.csprojResolveAssemblyReference.cache
+C:\Users\Александр\Documents\Visual Studio 2013\Projects\KneighboursAlgorithm\KneighboursAlgorithm\obj\Debug\KneighboursAlgorithm.exe
+C:\Users\Александр\Documents\Visual Studio 2013\Projects\KneighboursAlgorithm\KneighboursAlgorithm\obj\Debug\KneighboursAlgorithm.pdb
